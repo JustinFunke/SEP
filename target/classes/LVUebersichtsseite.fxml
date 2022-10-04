@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="LVuebersichtsseite" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Lehrveranstaltung.LVUebersichtsseiteController">
+   <children>
+      <Line endX="841.0" layoutX="130.0" layoutY="52.0" startX="-130.0" />
+      <Line endX="17.5" endY="540.5" layoutX="246.0" layoutY="140.0" startX="17.5" startY="-138.5" />
+      <Button fx:id="buttonHauptseite" layoutX="1.0" layoutY="1.0" mnemonicParsing="false" onAction="#zurHauptseite" prefHeight="49.0" prefWidth="120.0" text="Hauptseite" />
+      <Label fx:id="LVname" layoutX="269.0" layoutY="14.0" prefHeight="30.0" prefWidth="360.0" text="Name der Lehrveranstaltung">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="LVtyp" layoutX="125.0" layoutY="14.0" prefHeight="30.0" prefWidth="129.0" text="Typ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="LVsemester" layoutX="639.0" layoutY="14.0" prefHeight="30.0" prefWidth="145.0" text="Semester">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="LVlehrmaterialien" layoutX="69.0" layoutY="77.0" text="Lehrmaterialien">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="addLM" layoutX="237.0" layoutY="53.0" mnemonicParsing="false" onAction="#neuesLM" prefHeight="12.0" prefWidth="25.0" text="+" />
+      <Button fx:id="buttonTeilnehmerliste" layoutX="633.0" layoutY="53.0" mnemonicParsing="false" onAction="#openTeilnehmerliste" prefHeight="41.0" prefWidth="156.0" text="Teilnehmerliste öffnen" />
+      <ChoiceBox fx:id="boxLehrmaterial" layoutX="9.0" layoutY="134.0" prefHeight="25.0" prefWidth="170.0" />
+      <Button fx:id="downloadLM" layoutX="184.0" layoutY="134.0" mnemonicParsing="false" onAction="#holeLM" prefHeight="25.0" prefWidth="78.0" text="Download" />
+      <Label fx:id="currentIDLabel" layoutX="9.0" layoutY="429.0" prefHeight="17.0" prefWidth="1.0" text="1" visible="false" />
+      <Label fx:id="currentLVIDLabel" layoutX="773.0" layoutY="429.0" prefHeight="17.0" prefWidth="6.0" text="1" visible="false" />
+      <Line endX="-100.0" endY="-71.0" layoutX="734.0" layoutY="64.0" startX="-100.0" startY="-12.5" />
+      <Button fx:id="aktuellButton" layoutX="119.0" layoutY="417.0" mnemonicParsing="false" onAction="#aktuellisiereLMListe" prefHeight="25.0" prefWidth="25.0" text="o" />
+      <Line endX="133.0" layoutX="130.0" layoutY="179.0" startX="-130.0" />
+      <Label layoutX="66.0" layoutY="205.0" prefHeight="20.0" prefWidth="102.0" text="Projektgruppen">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="PGHinzufuegenButton" layoutX="237.0" layoutY="180.0" mnemonicParsing="false" onAction="#neuePG" prefHeight="12.0" prefWidth="25.0" text="+" />
+      <ChoiceBox fx:id="PGChoiceBox" layoutX="9.0" layoutY="244.0" prefHeight="25.0" prefWidth="252.0" />
+      <Button fx:id="PGBeitretenButton" layoutX="9.0" layoutY="283.0" mnemonicParsing="false" onAction="#projektBeitreten" prefHeight="25.0" prefWidth="64.0" text="Beitreten" />
+      <Button fx:id="PGAnzeigenButton" layoutX="190.0" layoutY="283.0" mnemonicParsing="false" onAction="#projektAnzeigen" prefHeight="25.0" prefWidth="71.0" text="Anzeigen" />
+      <ListView fx:id="listQuizliste" layoutX="573.0" layoutY="244.0" prefHeight="146.0" prefWidth="200.0" />
+      <Button fx:id="btnQuizTeilnehmen" layoutX="650.0" layoutY="405.0" mnemonicParsing="false" onAction="#cmdQuizTeilnehmen" text="An Quiz Teilnehmen" />
+      <Button fx:id="btnQuizErstellen" layoutX="649.0" layoutY="203.0" mnemonicParsing="false" onAction="#cmdQuizErstellen" text="Neues Quiz Erstellen" />
+      <ListView fx:id="listBewertungsListe" layoutX="349.0" layoutY="244.0" prefHeight="146.0" prefWidth="200.0" />
+      <Button fx:id="btnBewertungTeilnehmen" layoutX="393.0" layoutY="405.0" mnemonicParsing="false" onAction="#cmdBewertungTeilnehmen" prefHeight="25.0" prefWidth="156.0" text="An Bewertung Teilnehmen" />
+      <Button fx:id="btnBewertungErstellen" layoutX="393.0" layoutY="203.0" mnemonicParsing="false" onAction="#cmdBewertungErstellen" prefHeight="25.0" prefWidth="156.0" text="Neue Bewertung Erstellen" />
+   </children>
+</Pane>

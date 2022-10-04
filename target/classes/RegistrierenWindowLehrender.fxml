@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="panelRegistierenLehrender" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="708.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Registrierung.RegistrierenWindowLehrenderController">
+   <children>
+      <Label fx:id="lblSEP" layoutX="43.0" layoutY="32.0" text="Student Education Platform">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblRegistrieren" layoutX="146.0" layoutY="77.0" text="Registrieren">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblVorname" layoutX="43.0" layoutY="138.0" text="Vorname:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtVorname" layoutX="43.0" layoutY="168.0" prefHeight="25.0" prefWidth="364.0" />
+      <Label fx:id="lblNachname" layoutX="43.0" layoutY="193.0" text="Nachname:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNachname" layoutX="43.0" layoutY="223.0" prefHeight="25.0" prefWidth="364.0" />
+      <Label fx:id="lblEmail" layoutX="43.0" layoutY="248.0" text="E-mail:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEmail" layoutX="43.0" layoutY="278.0" prefHeight="25.0" prefWidth="364.0" />
+      <Label fx:id="lblPasswort" layoutX="43.0" layoutY="303.0" text="Passwort:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPasswort" layoutX="43.0" layoutY="333.0" prefHeight="25.0" prefWidth="364.0" />
+      <Label fx:id="lblStadt" layoutX="42.0" layoutY="358.0" text="Stadt:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtStadt" layoutX="43.0" layoutY="382.0" prefHeight="25.0" prefWidth="364.0" />
+      <Label fx:id="lblStraße" layoutX="42.0" layoutY="407.0" text="Straße und Hausnummer:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtStrasse" layoutX="43.0" layoutY="437.0" prefHeight="25.0" prefWidth="364.0" />
+      <Label fx:id="lblStudienfach" layoutX="43.0" layoutY="462.0" text="Lehrstuhl:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtLehrstuhl" layoutX="43.0" layoutY="492.0" prefHeight="25.0" prefWidth="364.0" />
+      <Label fx:id="lblProfilbild" layoutX="44.0" layoutY="573.0" text="Profilbild:">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="lblOptional" layoutX="132.0" layoutY="579.0" text="(Optional)" />
+      <Label fx:id="lblForschungsgebiet" layoutX="43.0" layoutY="517.0" text="Forschungsgebiet:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtForschungsgebiet" layoutX="43.0" layoutY="547.0" prefHeight="25.0" prefWidth="364.0" />
+      <Button fx:id="cmdRegistrieren" layoutX="229.0" layoutY="640.0" mnemonicParsing="false" onMouseClicked="#cmdRegistrieren_Clicked" prefHeight="25.0" prefWidth="182.0" text="Registrieren">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="cmdBild" layoutX="316.0" layoutY="584.0" mnemonicParsing="false" onMouseClicked="#cmdBild_Clicked" text="Bild auswählen" />
+      <Button fx:id="cmdZurueck" layoutX="37.0" layoutY="640.0" mnemonicParsing="false" onMouseClicked="#cmdZurueck_Clicked" prefHeight="25.0" prefWidth="182.0" text="Zurück">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="NeueLVFormular_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="435.0" prefWidth="496.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Lehrveranstaltung.NeueLVFormularController">
+   <children>
+      <Label fx:id="NeueLVFormularHeading_label" layoutX="99.0" layoutY="42.0" text="Neue Lehrveranstaltung erstellen ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="NeueLVFormularHeading_rectangle" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="50.0" layoutX="93.0" layoutY="32.0" stroke="BLACK" strokeType="INSIDE" width="303.0" />
+      <Label fx:id="NeueLVFormularName_label" layoutX="36.0" layoutY="143.0" text="Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="NeueLVFormularTyp_label" layoutX="36.0" layoutY="213.0" text="Typ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="NeueLVFormularSemester_label" layoutX="36.0" layoutY="306.0" text="Semester">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="LVnameTextField" layoutX="131.0" layoutY="143.0" prefHeight="25.0" prefWidth="247.0" />
+      <ChoiceBox fx:id="TypChoice" layoutX="131.0" layoutY="213.0" prefHeight="25.0" prefWidth="247.0" />
+      <Button fx:id="LVerstellenButton" layoutX="195.0" layoutY="369.0" mnemonicParsing="false" onAction="#erstellenButtonPressed" prefHeight="43.0" prefWidth="104.0" text="Erstellen" />
+      <TextField fx:id="semesterJahr" layoutX="308.0" layoutY="306.0" prefHeight="25.0" prefWidth="171.0" />
+      <Label fx:id="currentIDLabel" layoutX="14.0" layoutY="397.0" text="1" visible="false" />
+      <ChoiceBox fx:id="SemChoice" layoutX="133.0" layoutY="306.0" prefHeight="25.0" prefWidth="171.0" />
+      <Label layoutX="36.0" layoutY="263.0" prefHeight="20.0" prefWidth="321.0" text="Semesterjahr bitte mit 4 Ziffern angeben z.B.: 2022">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="283.0" prefHeight="20.0" prefWidth="375.0" text="Beim WiSe wird das folgende Jahr automatisch hinzugefügt.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

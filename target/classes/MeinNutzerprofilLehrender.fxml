@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaFx.MeinNPLehrenderController">
+   <children>
+      <Label layoutX="80.0" layoutY="23.0" text="Mein Nutzerprofil">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="197.0" layoutY="454.0" mnemonicParsing="false" onAction="#cmdProfilBearbeiten" prefHeight="18.0" prefWidth="89.0" text="Profil bearbeiten">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Label layoutX="35.0" layoutY="138.0" text="Vor- und Nachname:" />
+      <Label layoutX="35.0" layoutY="184.0" text="E-Server.Mail:" />
+      <Label layoutX="35.0" layoutY="231.0" text="Adresse:" />
+      <Label layoutX="34.0" layoutY="278.0" text="Lehrstuhl:" />
+      <Label layoutX="34.0" layoutY="325.0" text="Forschungsgebiet" />
+      <Label layoutX="34.0" layoutY="372.0" text="Lehrveranstalltungen:" />
+      <ImageView fx:id="imageProfilbild" fitHeight="88.0" fitWidth="122.0" layoutX="90.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="8.0" layoutY="11.0" mnemonicParsing="false" onAction="#cmdBackButton" text="Back" />
+      <Text fx:id="txtName" layoutX="35.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Name*" wrappingWidth="244.0" />
+      <Text fx:id="txtEmail" layoutX="35.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*E-Server.Mail*" wrappingWidth="244.0" />
+      <Text fx:id="txtAdresse" layoutX="35.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Adresse*" wrappingWidth="244.0" />
+      <Text fx:id="txtLehrstuhl" layoutX="35.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Lehrstuhl*" wrappingWidth="244.0" />
+      <Text fx:id="txtForschungsgebiet" layoutX="35.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Forschungsgebiet*" wrappingWidth="244.0" />
+      <Label fx:id="idLabel" layoutX="14.0" layoutY="467.0" text="idLabel" visible="false" />
+      <ListView fx:id="listViewLV" layoutX="35.0" layoutY="389.0" prefHeight="60.0" prefWidth="244.0" />
+      <Label layoutX="34.0" layoutY="476.0" prefHeight="17.0" prefWidth="110.0" text="Themenangebote:" />
+      <ListView fx:id="ThemenListView" layoutX="29.0" layoutY="502.0" prefHeight="53.0" prefWidth="244.0" />
+   </children>
+</Pane>

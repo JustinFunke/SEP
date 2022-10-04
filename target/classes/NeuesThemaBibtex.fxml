@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="543.0" prefWidth="321.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.javaFx.NeuesThemaBibtexController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="38.0" layoutX="52.0" layoutY="26.0" stroke="BLACK" strokeType="INSIDE" width="218.0" />
+      <Label layoutX="55.0" layoutY="30.0" prefHeight="30.0" prefWidth="212.0" text="Neues Thema anbieten:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="bibtexButton" layoutX="55.0" layoutY="399.0" mnemonicParsing="false" onAction="#bibtexHolen" prefHeight="25.0" prefWidth="64.0" text="Browse..." />
+      <TextField fx:id="themaTitel" layoutX="52.0" layoutY="100.0" prefHeight="25.0" prefWidth="218.0" />
+      <Button fx:id="themaBestaetigenButton" layoutX="114.0" layoutY="487.0" mnemonicParsing="false" onAction="#themaBestaetigen" prefHeight="30.0" prefWidth="94.0" text="Erstellen" />
+      <Label layoutX="52.0" layoutY="148.0" prefHeight="21.0" prefWidth="218.0" text="Kurze Beschreibung des Themas:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="79.0" prefHeight="17.0" prefWidth="134.0" text="Titel des Themas:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="bibtexPath" disable="true" layoutX="55.0" layoutY="424.0" prefHeight="25.0" prefWidth="218.0" />
+      <TextArea fx:id="themaBeschreibung" layoutX="52.0" layoutY="169.0" prefHeight="168.0" prefWidth="218.0" />
+      <Label layoutX="52.0" layoutY="365.0" text="Bibtex-Datei auswählen:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="currentIDLabel" layoutX="14.0" layoutY="521.0" text="1" visible="false" />
+   </children>
+</Pane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="297.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Quiz.QuizController">
+   <children>
+      <Label layoutX="284.0" layoutY="23.0" text="Quiz">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelFrage" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="24.0" layoutY="68.0" prefHeight="17.0" prefWidth="558.0" text="Beispielfrage:" textAlignment="CENTER" />
+      <CheckBox fx:id="checkBoxAntwortA" layoutX="62.0" layoutY="122.0" mnemonicParsing="false" onAction="#cmdCheckA" text="Anwort A" />
+      <CheckBox fx:id="checkBoxAntwortB" layoutX="371.0" layoutY="122.0" mnemonicParsing="false" onAction="#cmdCheckB" text="Anwort B" />
+      <CheckBox fx:id="checkBoxAntwortC" layoutX="62.0" layoutY="192.0" mnemonicParsing="false" onAction="#cmdCheckC" text="Anwort C" />
+      <CheckBox fx:id="checkBoxAntwortD" layoutX="370.0" layoutY="192.0" mnemonicParsing="false" onAction="#cmdCheckD" text="Anwort D" />
+      <Button layoutX="36.0" layoutY="248.0" mnemonicParsing="false" onAction="#cmdVerwerfen" text="Verwerfen" />
+      <Button fx:id="btnAbgeben" layoutX="461.0" layoutY="248.0" mnemonicParsing="false" onAction="#cmdAntwortAbgeben" prefHeight="25.0" prefWidth="114.0" text="Antwort abgeben" />
+      <Label fx:id="idLabel" layoutX="42.0" layoutY="218.0" text="idLabel" visible="false" />
+      <Label fx:id="currentLVIDLabel" layoutX="493.0" layoutY="227.0" text="currentLV" visible="false" />
+   </children>
+</Pane>

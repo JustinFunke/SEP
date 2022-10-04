@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="741.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.javaFx.HauptseiteStudentController">
+   <children>
+      <Button layoutX="673.0" layoutY="14.0" mnemonicParsing="false" onAction="#cmdLogoutButton" prefHeight="25.0" prefWidth="54.0" text="Logout" underline="true" />
+      <Button fx:id="btnName" layoutX="584.0" layoutY="48.0" mnemonicParsing="false" onAction="#cmdNameButton" prefHeight="25.0" prefWidth="143.0" text="Name" underline="true" />
+      <ListView fx:id="listViewLV" layoutX="14.0" layoutY="200.0" onMouseClicked="#cmdLVclick" prefHeight="292.0" prefWidth="239.0" />
+      <Text layoutX="60.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meine Lehrveranstalltungen" />
+      <Text layoutX="207.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Education Platform">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student" />
+      <Label fx:id="currentIDLabel" layoutX="642.0" layoutY="475.0" prefHeight="8.0" prefWidth="85.0" text="???" visible="false" />
+      <Button layoutX="107.0" layoutY="148.0" mnemonicParsing="false" onAction="#cmdSemesterApply" prefHeight="25.0" prefWidth="54.0" text="Apply" />
+      <ChoiceBox fx:id="boxSemester" layoutX="14.0" layoutY="148.0" prefHeight="25.0" prefWidth="86.0" />
+      <Label fx:id="currentLVIDLabel" layoutX="25.0" layoutY="41.0" text="LV" visible="false" />
+      <Button layoutX="584.0" layoutY="14.0" mnemonicParsing="false" onAction="#cmdRefreshButton" prefHeight="25.0" prefWidth="60.0" text="Refresh" underline="true" />
+      <Button layoutX="168.0" layoutY="148.0" mnemonicParsing="false" onAction="#cmdKurslisteButton" prefHeight="25.0" prefWidth="85.0" text="Kursliste" underline="true" />
+      <ListView fx:id="listFreunde" layoutX="479.0" layoutY="202.0" onMouseClicked="#cmdLVclick" prefHeight="251.0" prefWidth="239.0" />
+      <Text layoutX="564.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Freundesliste" />
+      <Button layoutX="508.0" layoutY="148.0" mnemonicParsing="false" onAction="#cmdChat" prefHeight="25.0" prefWidth="181.0" text="Chat" />
+      <Button layoutX="478.0" layoutY="463.0" mnemonicParsing="false" onAction="#cmdAdd" prefHeight="25.0" prefWidth="86.0" text="Add Friend" />
+      <Button layoutX="572.0" layoutY="463.0" mnemonicParsing="false" onAction="#cmdRequest" prefHeight="25.0" prefWidth="147.0" text="Freundschaftsanfragen" />
+      <Button layoutX="584.0" layoutY="83.0" mnemonicParsing="false" onAction="#cmdKalender" prefHeight="25.0" prefWidth="143.0" text="Kalender" />
+   </children>
+</Pane>

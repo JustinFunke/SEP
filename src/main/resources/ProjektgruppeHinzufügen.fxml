@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="708.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.ProjektGruppen.ProjektgruppeHinzufügenController">
+   <children>
+      <Label fx:id="lblUebuerschrift" layoutX="237.0" layoutY="14.0" text="Projektgruppe Hinzufügen">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSuche" layoutX="14.0" layoutY="59.0" onKeyTyped="#txtSuche_KeyTyped" prefHeight="25.0" prefWidth="255.0" />
+      <ListView fx:id="ListViewSuche" layoutX="14.0" layoutY="125.0" prefHeight="303.0" prefWidth="482.0" />
+      <Button fx:id="cmdHinzufuegen" layoutX="532.0" layoutY="403.0" mnemonicParsing="false" onMouseClicked="#cmdHinzufuegen_Clicked" prefHeight="25.0" prefWidth="150.0" text="Hinzufügen" />
+      <RadioButton fx:id="btnMatrikelnummer" layoutX="570.0" layoutY="63.0" mnemonicParsing="false" selected="true" text="Matrikelnummer" />
+      <Label fx:id="currentPGIDLabel" layoutX="22.0" layoutY="428.0" opacity="0.0" />
+      <Label fx:id="currentLVIDLabel" layoutX="70.0" layoutY="428.0" opacity="0.0" />
+   </children>
+</Pane>

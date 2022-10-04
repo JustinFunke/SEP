@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="442.0" prefWidth="354.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.javaFx.NeueLiteraturController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="43.0" layoutX="42.0" layoutY="30.0" stroke="BLACK" strokeType="INSIDE" width="271.0" />
+      <Label layoutX="52.0" layoutY="37.0" prefHeight="30.0" prefWidth="251.0" text="Literatureintrag hinzufügen:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="103.0" text="Art: ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="305.0" text="Jahr:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="168.0" text="Author:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="238.0" text="Titel:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="litJahr" layoutX="43.0" layoutY="328.0" prefHeight="25.0" prefWidth="271.0" />
+      <TextField fx:id="litTitel" layoutX="43.0" layoutY="261.0" prefHeight="25.0" prefWidth="271.0" />
+      <TextField fx:id="litAuthor" layoutX="43.0" layoutY="193.0" prefHeight="25.0" prefWidth="271.0" />
+      <TextField fx:id="litArt" layoutX="42.0" layoutY="128.0" prefHeight="25.0" prefWidth="271.0" />
+      <Button fx:id="literaturFertigButton" layoutX="42.0" layoutY="401.0" mnemonicParsing="false" onAction="#literaturFertig" prefHeight="25.0" prefWidth="52.0" text="Fertig" />
+      <Button fx:id="weiterenEintragButton" disable="true" layoutX="206.0" layoutY="362.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="107.0" text="Weiteren Eintrag" visible="false" />
+      <Label fx:id="currentIDLabel" layoutX="8.0" layoutY="420.0" text="1" visible="false" />
+      <Button fx:id="eintragSpeichernButton" layoutX="206.0" layoutY="401.0" mnemonicParsing="false" onAction="#eintragSpeichern" text="Eintrag speichern" />
+   </children>
+</Pane>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="371.0" prefWidth="277.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Quiz.QuizFeedbackController">
+   <children>
+      <Label layoutX="81.0" layoutY="20.0" text="Quiz-Feedback">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="118.0" layoutY="317.0" mnemonicParsing="false" onAction="#cmdBack" text="Back" />
+      <ListView fx:id="listViewFeedback" layoutX="34.0" layoutY="63.0" prefHeight="220.0" prefWidth="200.0" />
+   </children>
+</Pane>

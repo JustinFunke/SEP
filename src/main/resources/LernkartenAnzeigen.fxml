@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="paneAnzeige" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.ProjektGruppen.LernkartenAnzeigenController">
+   <children>
+      <Label fx:id="lblText" alignment="TOP_CENTER" layoutX="14.0" layoutY="62.0" prefHeight="274.0" prefWidth="571.0" text="Hier steht die Frage:" textAlignment="CENTER">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="cmdAntwort" layoutX="236.0" layoutY="355.0" mnemonicParsing="false" onMouseClicked="#cmdAntwort_Clicked" prefHeight="39.0" prefWidth="129.0" text="Antwort">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="cmdNaechsteFrage" layoutX="440.0" layoutY="355.0" mnemonicParsing="false" onMouseClicked="#cmdNaechsteFrage_Clicked" prefHeight="39.0" prefWidth="146.0" text="Nächste Frage">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="cmdVerlassen" layoutX="28.0" layoutY="355.0" mnemonicParsing="false" onMouseClicked="#cmdVerlassen_Clicked" prefHeight="39.0" prefWidth="129.0" text="Verlassen">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="currentPGIDLabel" layoutX="752.0" layoutY="431.0" text="1" visible="false" />
+      <Label fx:id="nameLabel" layoutX="752.0" layoutY="431.0" text="1" visible="false" />
+   </children>
+</Pane>

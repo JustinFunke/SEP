@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="532.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.javaFx.NPLehrenderBearbeitenController">
+   <children>
+      <Label layoutX="103.0" layoutY="23.0" text="Nutzerprofil">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="214.0" text="Straße:" />
+      <Label layoutX="35.0" layoutY="263.0" text="Lehrstuhl:" />
+      <Label layoutX="35.0" layoutY="313.0" text="Forschungsgebiet:" />
+      <Label layoutX="35.0" layoutY="359.0" text="Passwort:" />
+      <Label layoutX="35.0" layoutY="399.0" text="Passwort bestätigen:" />
+      <TextField fx:id="txtLehrstuhl" layoutX="35.0" layoutY="286.0" prefHeight="25.0" prefWidth="244.0" promptText="*Alter Lehrstuhl*" />
+      <TextField fx:id="txtWohnort" layoutX="35.0" layoutY="188.0" prefHeight="25.0" prefWidth="244.0" promptText="*Alter Wohnort*" />
+      <ImageView fx:id="imgProfilbild" fitHeight="88.0" fitWidth="122.0" layoutX="90.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="txtStrasse" layoutX="35.0" layoutY="235.0" prefHeight="25.0" prefWidth="244.0" promptText="*Alte Straße*" />
+      <PasswordField fx:id="txtPasswort" layoutX="35.0" layoutY="416.0" prefHeight="25.0" prefWidth="244.0" />
+      <PasswordField fx:id="txtPasswortBestätigen" layoutX="35.0" layoutY="376.0" prefHeight="25.0" prefWidth="244.0" />
+      <Button layoutX="35.0" layoutY="451.0" mnemonicParsing="false" onAction="#cmdVerwerfen" prefHeight="41.0" prefWidth="109.0" style="-fx-background-color: #E77471;" text="Verwerfen" />
+      <Button layoutX="170.0" layoutY="451.0" mnemonicParsing="false" onAction="#cmdSpeichern" prefHeight="41.0" prefWidth="109.0" style="-fx-background-color: #85BB65;" text="Speichern" />
+      <TextField fx:id="txtForschungsgebiet" layoutX="35.0" layoutY="331.0" prefHeight="25.0" prefWidth="244.0" promptText="*Altes Forschungsgebiet*" />
+      <Label layoutX="33.0" layoutY="167.0" text="Wohnort:" />
+      <Label fx:id="idLabel" layoutX="19.0" layoutY="501.0" text="idLabel" visible="false" />
+      <Button layoutX="215.0" layoutY="162.0" mnemonicParsing="false" onAction="#cmdBildÄndern" prefHeight="19.0" prefWidth="64.0" text="Bild ändern">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
